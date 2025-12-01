@@ -15,14 +15,20 @@ include_directories(
 )
 
 set(HEADER_FILES
+        include/decoder/DecoderFactory.hpp
+        include/decoder/IDecoder.hpp
+        include/decoder/SndfileDecoder.hpp
+
         include/audio_output.hpp
-        include/decoder_manager.hpp
         include/player_controller.hpp
         include/playlist_manager.hpp
         include/common.hpp
 )
 
 set(SRC_FILES
+        src/decoder/DecoderFactory.cpp
+        src/decoder/SndfileDecoder.cpp
+
         src/main.cpp
 )
 

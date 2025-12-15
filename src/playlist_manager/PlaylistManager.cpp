@@ -17,9 +17,11 @@ PlaylistManager::PlaylistManager()
 PlaylistManager::PlaylistManager(const std::filesystem::path &configJson)
     : PlaylistManager()
 {
-    std::ifstream ifs(configJson);
-    std::string str(std::istreambuf_iterator<char>{ifs}, {});
-    loadJsonConfig(str);
+    try {
+        std::ifstream ifs(configJson);
+        std::string str(std::istreambuf_iterator<char>{ifs}, {});
+        loadJsonConfig(str);
+    } catch (...) {}
 }
 
 PlaylistManager::PlaylistManager(std::string_view configJson)

@@ -24,8 +24,9 @@ set(HEADER_FILES
         include/decoder/IDecoder.hpp
         include/decoder/SndfileDecoder.hpp
 
+        include/playlist_manager/PlaylistManager.cpp
+
         include/player_controller.hpp
-        include/playlist_manager.hpp
         include/common.hpp
 )
 
@@ -37,8 +38,9 @@ set(SRC_FILES
         src/decoder/DecoderFactory.cpp
         src/decoder/SndfileDecoder.cpp
 
+        src/playlist_manager/PlaylistManager.cpp
+
         src/main.cpp
-        src/playlist_manager.cpp
         src/player_controller.cpp
 )
 

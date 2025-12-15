@@ -10,6 +10,7 @@ enum audioState
     created,
     paused,
     playing,
+    waiting,
     dead
 };
 
